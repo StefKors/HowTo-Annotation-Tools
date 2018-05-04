@@ -14,6 +14,16 @@
   crossorigin=""></script>
 ```
 
+2) Add div element and some CSS styles for the map element
+
+```
+ <div id="mapid"></div>
+```
+
+```
+ #mapid { height: 180px; }
+```
+
 
 # Made by
 [Stef Kors](http://www.stefkors.com )
