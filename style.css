@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+h1 {
+  border-bottom: 2px dot-dash;
+}
