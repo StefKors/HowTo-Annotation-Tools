@@ -67,9 +67,7 @@ window.onload = function() {
 var marker = L.marker([0, 0]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 ```
 
-5) To style to map marker you can add this code before the `marker` variable. Also update the marker variable to tell it which icon variable to use: `marker([0, 0], {icon: myIcon})`
-
-it should look like this:
+5) To style to map marker you can add this code before the `marker` variable. Also update the marker variable to tell it which icon variable to use: `marker([0, 0], {icon: myIcon})`. It should look like this:
 
 ```javascript
 var myIcon = L.icon({
