@@ -1,4 +1,15 @@
-# Readme
+# How to digitale kunstkritiek: Een praktische gids
+http://publishinglab.org/howto/new-howto.html
+
+**Annotation Tools, the Image Map – www.sophiazurcher.nl/ateliergeheim**
+Maak van je afbeelding een interactieve afbeelding. In deze workshop leer je meer over wat een image-map is en hoe je ze kunt toepassen. Je duikt in de documentatiemogelijkheden van Leaflet en hoe je de code van Github kunt gebruiken. Vervolgens ga je aan slag met jouw eigen image-map.
+
+Na afloop kan je zelfstandig aan de slag met een image-map.
+
+Deze workshop wordt twee keer aangeboden, op 7 en 14 juni en kun je tevens volgen in combinatie met Edit this Post.
+
+Workshopleider: Stef Kors
+
 ## Stap 1
 Maak een nieuw html bestand en Voeg het Leaflet css en .js bestand toe aan een `index.html` file.
 
