@@ -24,7 +24,11 @@ window.onload = function() {
     popupAnchor: [0, -43],
   });
 
-  var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+  var myPopup = L.tooltip({
+    opacity: 0.2
+  });
+
+  var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).popup().setContent('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 
 
   // calculate the edges of the image, in coordinate space

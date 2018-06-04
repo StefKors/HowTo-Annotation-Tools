@@ -85,8 +85,9 @@ The main documentation can be found at this url: [https://leafletjs.com/referenc
 
 1) Customizing the tooltips [https://leafletjs.com/reference-1.3.0.html#tooltip-option]
 2) Removing map controls [https://leafletjs.com/reference-1.3.0.html#control-zoom]
+3) Leaflet Tutorials [https://leafletjs.com/examples.html]
 
 
 # Made by
-[Stef Kors](http://www.stefkors.com )
+[Stef Kors](https://www.stefkors.com )
 2018
