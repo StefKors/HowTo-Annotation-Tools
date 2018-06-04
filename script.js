@@ -17,7 +17,14 @@ window.onload = function() {
       h = 1500,
       url = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
 
-  var marker = L.marker([0, 0]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+  var myIcon = L.icon({
+    iconUrl: 'arrow.png',
+    iconSize: [28, 41],
+    iconAnchor: [14, 41],
+    popupAnchor: [0, -43],
+  });
+
+  var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 
 
   // calculate the edges of the image, in coordinate space
