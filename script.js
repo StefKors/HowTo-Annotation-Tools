@@ -17,6 +17,8 @@ window.onload = function() {
       h = 1500,
       url = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
 
+  var marker = L.marker([0, 0]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+
 
   // calculate the edges of the image, in coordinate space
   var southWest = map.unproject([0, h], map.getMaxZoom()-1);

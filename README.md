@@ -61,6 +61,12 @@ window.onload = function() {
 };
 ```
 
+4) This is how you add map markers the `[0, 0]` are the X and Y coordinates, you need to add this under the `map` variable.
+
+```
+var marker = L.marker([0, 0]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+```
+
 
 # Made by
 [Stef Kors](http://www.stefkors.com )
