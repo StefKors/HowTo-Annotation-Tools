@@ -1,32 +1,63 @@
 # Readme
-1) Add leaflet css and script to the `index.html` file.
+## Stap 1
+Maak een nieuw html bestand en Voeg het Leaflet css en .js bestand toe aan een `index.html` file.
 
-```
+```html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
   crossorigin=""/>
 ```
 
-```
+```html
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
   crossorigin=""></script>
 ```
 
-2) Add div element and some CSS styles for the map element
 
+Het gehele `index.html` bestand:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HowTo</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+
+    <script src="jquery.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+  </body>
+
+</html>
 ```
+
+## Stap 2
+Voeg een div element en css toe aan voor het kaart element.
+
+```html
  <div id="mapid"></div>
 ```
 
-```
+```css
  #mapid { height: 180px; }
 ```
 
-3) Add the following script to the `script.js` file
+## Stap 3
+Voeg de volgende code toe aan de script file
 
-```
+```javascript
 window.onload = function() {
   // Using leaflet.js to pan and zoom a big image.
   // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
@@ -61,9 +92,12 @@ window.onload = function() {
 };
 ```
 
-4) This is how you add map markers the `[0, 0]` are the X and Y coordinates, you need to add this under the `map` variable.
+## Stap 4
+Dit is hoe je kaart markers toevoegt aan de kaart. Je maakt een variable `marker` via de `[0, 0]` kan je de X en Y coordinaten bepalen. `[0, 0]` is de linker bovenhoek van de afbeelding.
 
-```
+This is how you add map markers the `[0, 0]` are the X and Y coordinates, you need to add this under the `map` variable.
+
+```javascript
 var marker = L.marker([0, 0]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 ```
 
