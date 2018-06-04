@@ -6,10 +6,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  border-bottom: 2px dot-dash;
-}
-
 #mapid {
  height: 580px;
 }
