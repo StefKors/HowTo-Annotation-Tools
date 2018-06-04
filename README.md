@@ -80,6 +80,10 @@ var myIcon = L.icon({
 var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 ```
 
+## Reading the documentation
+
+1) Customizing the tooltips
+2) Removing map controls [https://leafletjs.com/reference-1.3.0.html#control-zoom]
 
 
 # Made by
