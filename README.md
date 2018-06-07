@@ -10,6 +10,9 @@ Deze workshop wordt twee keer aangeboden, op 7 en 14 juni en kun je tevens volge
 
 Workshopleider: Stef Kors
 
+## Benodigdheden
+https://atom.io/ (of vergelijkbare text-editor)
+
 ## Stap 1
 Maak een nieuw html bestand en Voeg het Leaflet css en .js bestand toe aan een `index.html` file.
 
