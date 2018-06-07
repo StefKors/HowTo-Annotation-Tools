@@ -28,7 +28,7 @@ window.onload = function() {
     opacity: 0.2
   });
 
-  var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).popup().setContent('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+  var marker = L.marker([0, 0], {icon: myIcon}).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
 
 
   // calculate the edges of the image, in coordinate space
